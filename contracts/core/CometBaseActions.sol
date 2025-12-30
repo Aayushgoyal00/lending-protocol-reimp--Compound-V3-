@@ -123,11 +123,10 @@ abstract contract CometBaseActions is TokenActions {
         if (srcBalance < 0) {
             if (uint256(-srcBalance) < baseBorrowMin) revert BorrowTooSmall();
 
-            // will do later
+
             if (!isBorrowCollateralized(src)) revert NotCollateralized();
 
         }
-        // would implement this in the comet.sol after the phase3
         doTransferOut(baseToken, to, amount);
 
         emit Withdraw(src, to, amount);

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.15;
 
-abstract contract ProtocolConstants {
+contract ProtocolConstants {
     /// Time
     // uint64 internal constant SECONDS_PER_YEAR = 31_536_000;
 
